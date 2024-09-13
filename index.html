@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Javascript Games</h1>
+        <p>Applying concepts such as DOM manipulation, event handling, and game logic to create interactive and responsive browser-based games.</p>
+        <a href="#" id="scroll-btn">Scroll to explore more &darr;</a>
+    </div>
+
+    <div class="blank"></div>
+
+    <div class="container second" id="games-section">
+        <div class="item">
+          <div class="img img-first"></div>
+          <div class="card">
+            <h3>Floppy Bird</h3>
+            <p>A gravity-based game where the player navigates a bird through obstacles using JavaScript</p>
+            <div class="links">
+                <a href="https://github.com/Sarankumar1812/Floppy-Bird">Code &#128279;</a>
+                <a href="https://floppy-bird-murex.vercel.app/">Live  &#128279;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="img img-second"></div>
+          <div class="card">
+            <h3>Memory Game</h3>
+            <p>A card-matching game using DOM manipulation, flip logic, and shuffle for randomized gameplay</p>
+            <div class="links">
+                <a href="https://github.com/Sarankumar1812/Memory-Game">Code &#128279;</a>
+                <a href="https://memory-game-delta-six.vercel.app/">Live  &#128279;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="img img-third"></div>
+          <div class="card">
+            <h3>Tic Tac Toe</h3>
+            <p>Classic 3x3 grid game with alternating turns, implementing win conditions and reset functionality</p>
+            <div class="links">
+                <a href="https://github.com/Sarankumar1812/Tic-Tac-Toe">Code &#128279;</a>
+                <a href="https://tic-tac-toe-five-taupe-58.vercel.app/">Live  &#128279;</a>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="blank"></div>
+
+    <script>
+      document.getElementById('scroll-btn').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.getElementById('games-section').scrollIntoView({ behavior: 'smooth' });
+      });
+    </script>
+</body>
+</html>
