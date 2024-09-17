@@ -60,27 +60,27 @@ a:hover {
 }
 
 .second {
+  padding: 2rem;
   background-image: url(image/gam-bg.jpg);
   background-attachment: fixed;
-  height: 800px;
 }
 
-h3 {
-  font-weight: 700;
-  font-size: 1.6rem;
-  margin-top: 1em;
-}
-
-.card > a {
-  margin-bottom: 2em;
+.card-row {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
 }
 
 .item {
   display: flex;
-  max-width: 320px;
-  background-color: white;
   flex-direction: column;
   align-items: center;
+  background-color: white;
+  width: 30%;
+  min-width: 280px;
+  max-width: 320px;
   border-radius: .5em;
   box-shadow: 0px 29px 38px -15px rgba(0, 0, 0, 0.43);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -113,9 +113,12 @@ h3 {
   background-image: url(image/XOX.png);
 }
 
-.second {
-  flex-direction: row;
-  gap: 1.6em;
+.img-fourth {
+  background-image: url(image/inc.jpg); /* Snake Game image */
+}
+
+.img-fifth {
+  background-image: url(image/task-management.jpg); /* Puzzle Game image */
 }
 
 .links {
@@ -129,4 +132,10 @@ h3 {
   flex-grow: 1;
   margin: 0 5px;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .item {
+    width: 90%;
+  }
 }
